@@ -66,11 +66,24 @@ body {
     /*text-transform: uppercase;*/
 }
 
-.container {
+
+/*.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+}*/
+
+
+/*.parent {
+    position: relative;
+}*/
+
+.child {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .logo {
