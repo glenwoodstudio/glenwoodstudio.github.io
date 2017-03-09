@@ -23,7 +23,7 @@ will be correctly compiled during `gulp serve` and `gulp`
 @font-face {
     font-family: 'klartext_monolight';
     src: url("../fonts/KlartextMono-Light-webfont.eot");
-    src: url("../fonts/KlartextMono-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../_fonts/KlartextMono-Light-webfont.woff2") format("woff2"), url("../_fonts/KlartextMono-Light-webfont.woff") format("woff"), url("../_fonts/KlartextMono-Light-webfont.ttf") format("truetype"), url("../_fonts/KlartextMono-Light-webfont.svg#klartext_monolight") format("svg");
+    src: url("../fonts/KlartextMono-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/KlartextMono-Light-webfont.woff2") format("woff2"), url("../fonts/KlartextMono-Light-webfont.woff") format("woff"), url("../fonts/KlartextMono-Light-webfont.ttf") format("truetype"), url("../fonts/KlartextMono-Light-webfont.svg#klartext_monolight") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -51,7 +51,8 @@ will be correctly compiled during `gulp serve` and `gulp`
 
 html, body {
     /*font-family: 'Roboto', 'Helvetica', sans-serif;*/
-    font-family: 'klartext_monolight', 'Roboto', 'Helvetica', sans-serif;
+    font-family: 'klartext_monolight', monospace;
+    ;
     margin: 0;
     padding: 0;
 }
@@ -60,7 +61,11 @@ body {
     color: #999;
     /*font-family: 'klartext_monolight', 'Roboto', 'Helvetica', sans-serif;*/
     background-image: url('../images/ps_neutral/ps_neutral.png');
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
+}
+
+h1 {
+    font-weight: normal;
 }
 
 .mdl-demo .mdl-layout__header-row {
