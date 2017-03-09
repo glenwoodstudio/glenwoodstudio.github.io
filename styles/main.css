@@ -52,7 +52,6 @@ will be correctly compiled during `gulp serve` and `gulp`
 html, body {
     /*font-family: 'Roboto', 'Helvetica', sans-serif;*/
     font-family: 'klartext_monolight', monospace;
-    ;
     margin: 0;
     padding: 0;
 }
