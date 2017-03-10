@@ -1122,43 +1122,46 @@ p+.stat {
 
 .accordion {
     margin-left: 0;
-    background: #fefefe;
+    /*background: #fefefe;*/
     list-style-type: none;
 }
 
 .accordion-item:first-child> :first-child {
-    border-radius: 3px 3px 0 0;
+    /*border-radius: 3px 3px 0 0;*/
+    /*margin-top: 2em;
+    padding-top: 1em;*/
 }
 
 .accordion-item:last-child> :last-child {
-    border-radius: 0 0 3px 3px;
+    /*border-radius: 0 0 3px 3px;*/
 }
 
 .accordion-title {
     position: relative;
     display: block;
-    padding: 1.25rem 1rem;
-    border: 1px solid #e6e6e6;
-    border-bottom: 0;
-    font-size: 0.75rem;
-    line-height: 1;
-    color: #2ba6cb;
+    padding-left: 1rem;
+    /*padding: 1.25rem 1rem;*/
+    /*border: 1px solid #e6e6e6;*/
+    /*border-bottom: 0;*/
+    /*font-size: 0.75rem;*/
+    /*line-height: 1;*/
+    /*color: #2ba6cb;*/
 }
 
  :last-child:not(.is-active)>.accordion-title {
-    border-bottom: 1px solid #e6e6e6;
-    border-radius: 0 0 3px 3px;
+    /*border-bottom: 1px solid #e6e6e6;
+    border-radius: 0 0 3px 3px;*/
 }
 
 .accordion-title:hover, .accordion-title:focus {
-    background-color: #e6e6e6;
+    /*background-color: #e6e6e6;*/
 }
 
 .accordion-title::before {
     position: absolute;
-    top: 50%;
-    right: 1rem;
-    margin-top: -0.5rem;
+    /*top: 50%;*/
+    left: 0;
+    /*margin-top: -1rem;*/
     content: '+';
 }
 
@@ -1167,16 +1170,49 @@ p+.stat {
 }
 
 .accordion-content {
+    position: relative;
     display: none;
-    padding: 1rem;
+    padding-left: 1rem;
+    /*padding: 1rem;
     border: 1px solid #e6e6e6;
     border-bottom: 0;
     background-color: #fefefe;
-    color: #0a0a0a;
+    color: #0a0a0a;*/
+}
+.accordion-content ul li::before {
+    position: absolute;
+    /*top: 50%;*/
+    left: 0;
+    /*margin-top: -1rem;*/
+    content: '>';
 }
 
+.accordion-content ul li {
+  line-height: 1.25em;
+  margin-bottom: 1em;
+}
+
+.accordion-title {
+text-decoration: underline;
+margin-top: 1em;
+}
+
+.items:first-child {
+
+  margin-top: 1em
+}
+.items:last-child {
+
+  margin-bottom: 2em
+}
+
+
+/*.is-active>.accordion-content::before {
+    content: '\2013';
+}*/
+
  :last-child>.accordion-content:last-child {
-    border-bottom: 1px solid #e6e6e6;
+    /*border-bottom: 1px solid #e6e6e6;*/
 }
 
 .tabs {
