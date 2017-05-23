@@ -74,5 +74,9 @@
 
     // Your custom JavaScript goes here
 
-    $(document).foundation();
+    //$(document).foundation();
+
+    //$(document).ready(function(){
+    //$('#example1').Chocolat();
+//});
 })();
