@@ -20,244 +20,184 @@ Note: any .css or .scss files included in the 'styles' directory
 will be correctly compiled during `gulp serve` and `gulp`
  */
 
-@font-face {
-    font-family: 'klartext_monolight';
-    src: url("../fonts/KlartextMono-Light-webfont.eot");
-    src: url("../fonts/KlartextMono-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/KlartextMono-Light-webfont.woff2") format("woff2"), url("../fonts/KlartextMono-Light-webfont.woff") format("woff"), url("../fonts/KlartextMono-Light-webfont.ttf") format("truetype"), url("../fonts/KlartextMono-Light-webfont.svg#klartext_monolight") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
+
+/*@font-face {
+  font-family: 'klartext_monolight';
+  src: url("../fonts/KlartextMono-Light-webfont.eot");
+  src: url("../fonts/KlartextMono-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/KlartextMono-Light-webfont.woff2") format("woff2"), url("../fonts/KlartextMono-Light-webfont.woff") format("woff"), url("../fonts/KlartextMono-Light-webfont.ttf") format("truetype"), url("../fonts/KlartextMono-Light-webfont.svg#klartext_monolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+
+/*@font-face {
+  font-family: 'lektonbold';
+  src: url('../fonts/lekton-bold-webfont.woff2') format('woff2'), url('../fonts/lekton-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+
+/*@font-face {
+  font-family: 'lektonitalic';
+  src: url('../fonts/lekton-italic-webfont.woff2') format('woff2'), url('../fonts/lekton-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}*/
 
 @font-face {
-    font-family: 'lektonbold';
-    src: url('../fonts/lekton-bold-webfont.woff2') format('woff2'), url('../fonts/lekton-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'lektonitalic';
-    src: url('../fonts/lekton-italic-webfont.woff2') format('woff2'), url('../fonts/lekton-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'lektonregular';
-    src: url('../fonts/lekton-regular-webfont.woff2') format('woff2'), url('../fonts/lekton-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'lektonregular';
+  src: url('../fonts/lekton-regular-webfont.woff2') format('woff2'), url('../fonts/lekton-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 html, body {
-    /*font-family: 'Roboto', 'Helvetica', sans-serif;*/
-    font-family: 'lektonregular', monospace;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
+  /*font-family: 'Roboto', 'Helvetica', sans-serif;*/
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    color: #999;
-    /*font-family: 'klartext_monolight', 'Roboto', 'Helvetica', sans-serif;*/
-    /*background-image: url('../images/ps_neutral/ps_neutral.png');*/
-    /*background-color: white;*/
-    /*text-transform: uppercase;*/
+  color: #999;
+  font-family: 'lektonregular', monospace;
+  /*font-family: 'klartext_monolight', 'Roboto', 'Helvetica', sans-serif;*/
+  /*background-image: url('../images/ps_neutral/ps_neutral.png');*/
+  /*background-color: white;*/
+  /*text-transform: uppercase;*/
+  font-size: .9em;
 }
 
-main {
-    padding-top: 5em;
+.span-block {
+  display: inline-block;
 }
 
-section {
-  min-height: 100%;
-  height:auto !important;
-  height: 100%;
 
-    padding-top: 5em;
+/*SET UP + HELPER CLASSES (PRESENTATION) */
 
-    /*border-bottom: 1px solid #ccc*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-/*
-.image-container {
-  width: 60%;
-  background: aqua;
-  padding-bottom: 60%;
-
-}*/
 
 img {
   max-width: 100%
 }
 
-
-.images-container{
-    margin-top: 5em;
-
+.aqua {
+  background: aqua
 }
 
-@media print, screen and (min-width: 40em) {
-  .images-container{
-
-      max-width: 60%;
-  }
+.outline {
+  border: 1px solid #ccc;
 }
 
-.img-container {
-    position: relative;
-    padding-bottom: 100%; /* 16:9 ratio */
-    width: 100%;
-    height: 0;
-    /*overflow: hidden;*/
-    background-image: url('../images/IMG_9404.jpg');
-}
-
-/*.img-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}*/
-
-
-.list-style-type-none {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.span-block {
-    display: inline-block;
-}
-
-.caps {
-    text-transform: uppercase;
-    /*font-size: 98%*/
-}
-
-.small-caps {
-    font-size: 98%
+.uppercase {
+  text-transform: uppercase;
 }
 
 .capitalize {
-    text-transform: capitalize;
-}
-
-.lowercase-large {
-    font-size: 1.2em;
-}
-
-a {
-    color: #999
-}
-
-
-/*.small-numerals {
-    font-size: 90%
-}*/
-
-.outline {
-    border: 1px solid #ccc;
-}
-
-.email {
-    /*border-bottom: 1px solid #ccc;
-    margin-bottom: -1em;*/
+  text-transform: capitalize;
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .h2 {
-    font-size: 1rem;
-    text-transform: uppercase;
-    /*letter-spacing: 6px;*/
-
+  font-size: 1rem;
+  /*letter-spacing: 6px;*/
 }
 
 .spread-9 {
-    letter-spacing: 9px;
-}
-
-.contact {
-    font-size: .9em;
-    margin-top: 60%;
-}
-.contact li {
-    /*margin-left: 1em*/
+  letter-spacing: 9px;
 }
 
 .opacity {
-    opacity: .4
+  opacity: .4
 }
 
-/*.email a {
-    text-decoration: underline;
+
+/*STRUCTURE + LAYOUT */
+
+main {
+  padding-top: 5em;
+}
+
+section {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  padding-top: 5em;
+}
+
+.footer {
+  height: 5em;
+  line-height: 5em;
+}
+
+
+/*TYPOGRAPHY*/
+
+.caps {
+  /*text-transform: uppercase;*/
+  font-size: 98%
+}
+
+
+/*.small-caps {
+  font-size: 98%
 }*/
 
-.address {
-    line-height: 1.25em;
-}
 
-.equipment {
-    /*padding-top: 5em*/
-}
-
-
-/*.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+/*.lowercase-large {
+  font-size: 1.2em;
 }*/
 
+a {
+  color: #999
+}
 
-/*.parent {
-    position: relative;
+
+/*SECTIONS*/
+
+
+/* HOME */
+
+
+/* CONTACT */
+
+
+/*.contact {
+  font-size: .9em;
 }*/
-
-.child {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/*.logo-container {
-      margin-bottom: 15em;
-      display: block;
-      background-color: white
-}*/
-
-.logo {
-    /*height: 100;*/
-    /*height: 200px;
-    width: 300px;
-    min-width: 300px*/
-
-}
-
-.aqua {
-    background: aqua
-}
-
-.fullheight {
-    height: 100%;
-    min-height: 100%;
-}
 
 .contact li {
-    margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
+  margin-top: 1em;
 }
 
 
+/*.address {
+  line-height: 1.25em;
+}*/
 
 
-ul.items {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/*IMAGES*/
+
+
+/*EQUIPMENT */
+
+.accordion {
+  margin-bottom: 5em;
+}
+
+
+/*FOOTER*/
+
+.footer li {
+  display: inline-block;
 }
